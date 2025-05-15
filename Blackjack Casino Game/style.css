@@ -1,0 +1,81 @@
+:root {
+    font-family: system-ui, sans-serif;
+    --bg: #0d1117;
+    --card: #161b22;
+    --accent: #3fb950;
+    --text: #e6edf3;
+    --danger: #f85149;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -3.75em;
+}
+
+.container {
+    background: var(--card);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    color: var(--accent);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 1.2rem 0 0.5rem;
+    gap: 1rem;
+}
+
+.stats p {
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin: 0.35rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+
+#start-btn {
+    background: var(--accent);
+    color: #000;
+}
+
+#newcard-btn {
+    background: #238636;
+    color: #fff;
+}
+
+#restart-btn {
+    background: var(--danger);
+    color: #fff;
+}
+
+button:not(:disabled):hover {
+    transform: translateY(-2px);
+}

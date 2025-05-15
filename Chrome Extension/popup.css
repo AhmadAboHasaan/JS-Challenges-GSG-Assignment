@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #0f0f11;
+    --card: #1c1c1f;
+    --accent: #00b4d8;
+    --text: #e2e8f0;
+    --danger: #ff6b6b;
+}
+
+html,
+body {
+    width: 360px;
+    font-family: system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+}
+
+header {
+    padding: 0.8rem 1rem 0.4rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--accent);
+}
+
+form {
+    display: flex;
+    gap: 0.4rem;
+    padding: 0 1rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid #30363d;
+    border-radius: 0.5rem;
+    background: var(--card);
+    color: var(--text);
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+input.danger {
+    border-color: var(--danger) !important;
+}
+
+button {
+    padding: 0.5rem 0.9rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: var(--accent);
+    color: #000;
+    transition: transform 0.15s ease, filter 0.15s ease, opacity 0.2s ease;
+}
+
+button.full {
+    width: calc(100% - 2rem);
+    margin: 0.7rem 1rem;
+}
+
+button.danger {
+    background: var(--danger);
+    color: #fff;
+}
+
+button.secondary {
+    background: #30363d;
+    color: var(--text);
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}
+
+button:not(:disabled):active {
+    transform: translateY(0);
+    filter: brightness(0.95);
+}
+
+#links-list {
+    list-style: none;
+    margin: 0.2rem 0 0;
+    padding: 0 1rem 0.2rem;
+    max-height: 300px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--bg);
+}
+
+#links-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#links-list::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+
+#links-list::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 3px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid #30363d;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    flex: 1;
+    text-decoration: none;
+    color: #7fdfff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+li button {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    background: var(--danger);
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    gap: 0.6rem;
+    padding: 0.6rem 1rem 1rem;
+}
+
+.footer button {
+    flex: 1;
+}
+
+#export-btn {
+    background: #30363d;
+    color: var(--text);
+}
+
+.empty-msg {
+    opacity: 0.65;
+    padding: 0 1rem;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ========  UI  ======== -->
+    <main class="container">
+        <h1>Blackjack</h1>
+
+        <p id="message-tag">Click <strong>START GAME</strong> to begin.</p>
+        <p id="cards-tag">Cards:&nbsp;–</p>
+        <p id="sum-tag">Sum:&nbsp;0</p>
+
+        <button id="start-btn">START&nbsp;GAME</button>
+        <button id="newcard-btn" disabled>NEW&nbsp;CARD</button>
+        <button id="restart-btn" disabled>PLAY AGAIN</button>
+
+        <div class="stats">
+            <p id="wins-tag">Wins:&nbsp;0</p>
+            <p id="losses-tag">Losses:&nbsp;0</p>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

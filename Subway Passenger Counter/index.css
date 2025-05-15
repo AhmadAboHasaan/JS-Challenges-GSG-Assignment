@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(istockphoto-1216197405-612x612.jpg);
+    background-size: cover;
+}
+
+main {
+    width: 25em;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+button{
+    cursor: pointer;
+    width: 25%;
+    height: 10%;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+    width: 27.5%;
+    height: 12.5%;
+}

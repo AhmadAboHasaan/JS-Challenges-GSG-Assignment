@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Save Tabs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Save&nbsp;Tabs</h1>
+  </header>
+
+  <main>
+    <form id="manual-form">
+      <input id="url-input" type="url" placeholder="https://example.com" required />
+      <button type="submit" title="Save typed URL">Save&nbsp;Input</button>
+    </form>
+
+    <button id="save-tab-btn" class="full" title="Save current tab">Save&nbsp;Current&nbsp;Tab</button>
+
+    <ul id="links-list"></ul>
+
+    <div class="footer">
+      <button id="export-btn" title="Copy all links">Export</button>
+      <button id="clear-btn" title="Delete all links">Clear&nbsp;All</button>
+    </div>
+  </main>
+
+  <script src="popup.js" type="module"></script>
+</body>
+
+</html>
